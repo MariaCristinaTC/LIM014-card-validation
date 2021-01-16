@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Card Validator</title>
+    <meta name="description" content="Card Validator">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="contentPanel">
-        <div class="site-logo"> <img src="https://srdbpharmacy.edu.in/wp-content/uploads/2018/05/eLibrary_logo_web.jpg">
+    <div class="content-panel">
+        <div class="content-panel__logo-area">
+            <img class="content-panel__logo-area__img" src="https://srdbpharmacy.edu.in/wp-content/uploads/2018/05/eLibrary_logo_web.jpg">
         </div>
-        <header class="contentHeader">Tu biblioteca de bolsillo</header>
-        <p class="suggestion">Estas a pocos segundos de disfrutar miles de libros exclusivos. </p>
-        <p class="suggestion">Por favor ingrese los dígitos de su tarjeta.</p>
-
-        <div class="cardNumber">
-            <input class="cardNumber" id="boxCardNumber" type="number">
+        <div class="content-panel__title">Tu biblioteca de bolsillo</div>
+        <div class="content-panel__suggestion">Estas a pocos segundos de disfrutar miles de libros exclusivos. </div>
+        <div class="content-panel__suggestion">Por favor ingrese los dígitos de su tarjeta.</div>
+        <div class="content-panel__form-area">
+            <div class="content-panel__form-area__input-group">
+                <label for="cardNumber">Card #: </label>
+                <input class="content-panel__form-area__input-group__input" name="cardNumber" id="cardNumber" placeholder="Enter Number">
+            </div>
+            <div class="content-panel__form-area__buttons">
+                <button id="validateButton"> VALIDAR </button>
+                <button id="multiplyButton"> MULTIPLY </button>
+                <button id="clearButton"> CLEAR </button>
+            </div>
         </div>
-        <div class="button-area">
-            <button class="btn" id="validateButton"> VALIDAR </button>
-
-        </div>
 
 
-        <main></main>
-        <footer>
-            <img class="navIcon goBack" id="goBack" src="data:image/png;base64,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">
 
-
-            <img class="navIcon homeIcon" src="https://i.ibb.co/x2jTVsN/home-2.png">
-
-
-        </footer>
-
-        <script src="validator.js" type="module"></script>
 </body>
 
 </html>
+
+<script type="module" src="js/index.js"></script>

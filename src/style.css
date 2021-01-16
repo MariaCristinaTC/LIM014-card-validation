@@ -1,83 +1,83 @@
-    body {
-        font-family: 'Extra-light 200';
-        font-size: 100px;
-        background-position: initial;
-        background-image: linear-gradient(to bottom, #9acda5, #8ed5c7, #96dae2, #afdcf3, #cdddf9);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contentPanel {
-        background-color: white;
-        max-width: 800px;
-        border-radius: 50px;
-        margin-top: 100px;
-    }
-    
-    .site-logo {
-        margin: 30px 180px;
-    }
-    
-    .contentHeader {
-        margin-top: 50px;
-        font-size: 60px;
-        text-align: center;
-        color: #066b92;
-        font-weight: bold;
-    }
-    
-    .suggestion {
-        font-size: 50px;
-        text-align: center;
-        margin: 150px 20PX;
-    }
-    
-    .button-area {
-        display: flex;
-        justify-content: center;
-    }
-    
-    button {
-        border-radius: 50px;
-        border-width: 0px;
-        background-color: rgb(5, 143, 143);
-        color: #FFFF;
-        font-family: 'Extra-light 200';
-        font-size: 60px;
-        display: inline-block;
-        padding: 25px 35px;
-        letter-spacing: 8px;
-        font-weight: 200;
-        margin: 30px;
-        margin-top: 60px;
-    }
-    
-    .cardNumber {
-        border-color: rgba(10, 134, 93, 0.774);
-        border-width: 2px;
-        border-radius: 20px;
-        text-align: center;
-        font-size: 55px;
-        font-family: "Extra-light 200";
-    }
-    
-    .homeIcon {
-        margin: 50px;
-        display: inline-block;
-        align-self: center;
-    }
-    
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 50px;
-    }
-    
-    .navIcon {
-        height: 150px;
-        width: 150px;
-    }
+body {
+    font-family: "Extra-light 200";
+    font-size: 16px;
+    background-position: initial;
+    background-image: linear-gradient(to bottom, #9acda5, #8ed5c7, #96dae2, #afdcf3, #cdddf9);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.content-panel {
+    background-color: white;
+    max-width: 800px;
+    border-radius: 50px;
+    margin: 20px;
+    margin-top: 15%;
+    padding: 10px;
+    align-self: center;
+}
+
+.content-panel__logo-area {
+    display: flex;
+    justify-content: center;
+}
+
+.content-panel__logo-area__img {
+    width: 180px;
+    height: auto;
+    margin: 30px;
+}
+
+.content-panel__title {
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #066b92;
+    font-weight: bold;
+}
+
+.content-panel__suggestion {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-panel__form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-panel__form-area__input-group {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.content-panel__form-area__input-group__input {
+    padding: 10px 20px;
+    font-family: "Extra-light 200";
+    letter-spacing: 1px;
+}
+
+.content-panel__form-area__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50px;
+    border-width: 0px;
+    background-color: rgb(5, 143, 143);
+    color: #ffff;
+    font-family: "Extra-light 200";
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 15px;
+}
