@@ -15,6 +15,7 @@ export const validateField = (number) => {
     //if no
     //return FALSE
 
+
     if (number > 100) {
         return true;
     } else {
