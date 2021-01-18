@@ -1,52 +1,58 @@
-export const validateField = (number) => {
+export const isValid = (numbCard) => {
+
+    // if (numbCard.length < 16) {
+    //     return false
+    // }
 
     //convert into array
+    let numberArray = numbCard.split('');
+    console.log('before loop', numberArray)
+        //first loop
+    var i;
+    for (i = 0; i < numberArray.length; i++) {
+        //test if second digit 
+        if (i % 2 == 0) {
 
-    //do operations on array index 4, 8, 12
+            //multiply second digit
+            let multipliedNumber = numberArray[i] * 2;
+            numberArray[i] = multipliedNumber.toString();
 
-    //update array
+            if (multipliedNumber > 9) {
+                let bigNumberArray = numberArray[i].split('');
 
-    //add all the number
-
-    //check if equals last digit 0
-
-    //if yes
-    //return TRUE
-    //if no
-    //return FALSE
-
-
-    if (number > 100) {
-        return true;
-    } else {
-        return false;
+                let theProduct = parseInt(bigNumberArray[0]) + parseInt(bigNumberArray[1]);
+                numberArray[i] = theProduct.toString();
+            }
+        }
     }
+    console.log('after loop', numberArray)
 
-}
+    //sum 
+    let total = 0
+    let index = 0
+    for (index = 0; index < numberArray.length; index++) {
+        total = total + parseInt(numberArray[index]);
 
+    }
+    console.log(total)
+    if (total % 10 == 0) {
 
-export const multiplyNumbers = (number) => {
+        return true
 
-    let newNumber = number * 100;
-
-    return newNumber;
+    } else {
+        return false
+    }
 
 }
 
 
 //
 
-function maskify() {
-    var numbCard = document.getElementById('user').value; /*Tomar el dato que se ingreso. Input*/
+export const maskify = (numbCard) => {
     let lastDigit = numbCard.slice(-4); /*Tomar solo los ultimos digitos*/
     let example = numbCard.length - 4; /*El total de caratetres*/
     let maskSymbol = "#"; /*Solo es para texto*/
     let masked_str = maskSymbol.repeat(example) + lastDigit; /*Concatena el # con los últimos dígitos*/
 
-    if (numbCard === null || numbCard === "") {
-        alert("Por favor, completa el númera de Tarjeta");
-    } else {
-        let resultado = document.getElementById('blank');
-        resultado.innerHTML = 'Tarjeta Encriptada es :: ' + masked_str;
-    }
+    return masked_str;
 }

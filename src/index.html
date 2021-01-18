@@ -27,12 +27,14 @@
         <div class="content-panel__form-area">
             <div class="content-panel__form-area__input-group">
                 <label for="cardNumber">Card #: </label>
-                <input class="content-panel__form-area__input-group__input" name="cardNumber" id="cardNumber" placeholder="Enter Number">
+                <input class="content-panel__form-area__input-group__input" name="cardNumber" id="cardNumber" placeholder="Escribe tu número aqui" type="number" autocomplete="off" required>
             </div>
+
+
+            <div id="answer"></div>
             <div class="content-panel__form-area__buttons">
-                <button id="validateButton"> VALIDAR </button>
-                <button id="multiplyButton"> MULTIPLY </button>
-                <button id="clearButton"> CLEAR </button>
+                <button id="validateButton" type="submit"> VALIDAR </button>
+
             </div>
         </div>
 
