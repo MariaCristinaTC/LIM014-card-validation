@@ -1,65 +1,57 @@
- const isValid = (numbCard) => {
+const isValid = (numbCard) => {
+    //convert into array
+    let numberArray = numbCard.split('');
+    console.log('before loop', numberArray)
+        //first loop
+    var i;
+    for (i = 0; i < numberArray.length; i++) {
+        //test if second digit 
+        if (i % 2 == 0) {
 
-     // if (numbCard.length < 16) {
-     //     return false
-     // }
+            //multiply second digit
+            let multipliedNumber = numberArray[i] * 2;
+            numberArray[i] = multipliedNumber.toString();
 
-     //convert into array
-     let numberArray = numbCard.split('');
-     console.log('before loop', numberArray)
-         //first loop
-     var i;
-     for (i = 0; i < numberArray.length; i++) {
-         //test if second digit 
-         if (i % 2 == 0) {
+            if (multipliedNumber > 9) {
+                let bigNumberArray = numberArray[i].split('');
 
-             //multiply second digit
-             let multipliedNumber = numberArray[i] * 2;
-             numberArray[i] = multipliedNumber.toString();
+                let theProduct = parseInt(bigNumberArray[0]) + parseInt(bigNumberArray[1]);
+                numberArray[i] = theProduct.toString();
+            }
+        }
+    }
+    console.log('after loop', numberArray)
 
-             if (multipliedNumber > 9) {
-                 let bigNumberArray = numberArray[i].split('');
+    //sum 
+    let total = 0
+    let index = 0
+    for (index = 0; index < numberArray.length; index++) {
+        total = total + parseInt(numberArray[index]);
 
-                 let theProduct = parseInt(bigNumberArray[0]) + parseInt(bigNumberArray[1]);
-                 numberArray[i] = theProduct.toString();
-             }
-         }
-     }
-     console.log('after loop', numberArray)
+    }
+    console.log(total)
+    if (total % 10 == 0) {
 
-     //sum 
-     let total = 0
-     let index = 0
-     for (index = 0; index < numberArray.length; index++) {
-         total = total + parseInt(numberArray[index]);
+        return true
 
-     }
-     console.log(total)
-     if (total % 10 == 0) {
+    } else {
+        return false
+    }
 
-         return true
-
-     } else {
-         return false
-     }
-
- }
+}
 
 
- //
+//
 
- const maskify = (numbCard) => {
-     let lastDigit = numbCard.slice(-4); /*Tomar solo los ultimos digitos*/
-     let example = numbCard.length - 4; /*El total de digits*/
-     let maskSymbol = "#";
-     let masked_str = maskSymbol.repeat(example) + lastDigit; /*Concatena el # con los últimos dígitos*/
-     //.replace...etc
-     return masked_str;
- }
+const maskify = (numbCard) => {
+    let lastDigit = numbCard.slice(-4); /*Tomar solo los ultimos digitos*/
+    let example = numbCard.length - 4; /*El total de digits*/
+    let maskSymbol = "#";
+    let masked_str = maskSymbol.repeat(example) + lastDigit; /*Concatena el # con los últimos dígitos*/
+    //.replace...etc
+    return masked_str;
+}
 
 
- const validator = {
-     isValid,
-     maskify
- }
- export default validator
+const validator = { isValid, maskify }
+export default validator
