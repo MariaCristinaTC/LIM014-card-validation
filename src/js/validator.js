@@ -6,7 +6,7 @@ const isValid = (numbCard) => {
     var i;
     for (i = 0; i < numberArray.length; i++) {
         //test if second digit 
-        if (i % 2 == 0) {
+        if (i % 2 != 0) {
 
             //multiply second digit
             let multipliedNumber = numberArray[i] * 2;
@@ -42,15 +42,32 @@ const isValid = (numbCard) => {
 
 
 //
-
 const maskify = (numbCard) => {
-    let lastDigit = numbCard.slice(-4); /*Tomar solo los ultimos digitos*/
-    let example = numbCard.length - 4; /*El total de digits*/
-    let maskSymbol = "#";
-    let masked_str = maskSymbol.repeat(example) + lastDigit; /*Concatena el # con los últimos dígitos*/
-    //.replace...etc
-    return masked_str;
+    // If length is greater than 4, then we have things to mask
+    if (numbCard.length > 4) {
+        // reverse string
+        let reversed = reverse(numbCard);
+        let newString = '';
+        for (let i = 0; i < reversed.length; i++) {
+            // if i < 4, we want to reveal these numbers in our output
+            if (i < 4) {
+                newString += reversed[i];
+            } else {
+                // otherwise, just hide it
+                newString += '#';
+            }
+        }
+        // return the reversal of the string to revert it back to original format
+        return reverse(newString);
+    } else {
+        return numbCard;
+    }
 }
+
+function reverse(str) {
+    return str.split("").reverse().join("");
+}
+
 
 
 const validator = { isValid, maskify }
