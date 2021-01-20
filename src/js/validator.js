@@ -1,6 +1,7 @@
 const isValid = (numbCard) => {
     //convert into array
-    let numberArray = numbCard.split('');
+    let numberArray = numbCard.split('')
+        .reverse();
     console.log('before loop', numberArray)
         //first loop
     var i;
