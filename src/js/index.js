@@ -8,8 +8,8 @@ document.getElementById('validateButton').addEventListener('click', () => {
 
 
     if (isValid(creditCardNumber) == true) {
-        document.getElementById("answer").innerHTML = maskify(creditCardNumber) + " Tarjeta valida"
+        document.getElementById("answer").innerHTML = maskify(creditCardNumber) + " Tarjeta valida ✔✔✔ "
     } else {
-        document.getElementById("answer").innerHTML = maskify(creditCardNumber) + " Tarjeta NO valida"
+        document.getElementById("answer").innerHTML = maskify(creditCardNumber) + " Tarjeta NO valida🤣🤣🤷‍♂️🤷‍♂️🤢"
     }
 });

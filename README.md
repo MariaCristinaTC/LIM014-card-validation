@@ -1,8 +1,12 @@
 # Tarjeta de crédito válida
+Este proyecto está orientado a usuarios de librerias virtuales. Por practicidad  la web se mostrara como si fuese el ultimo paso de creacion de perfil de usuario donde se requiere ingresar un numero de tarjeta valida.
+
+[![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg)](https://digitalocean.com)
+
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+                                                                                                                                                * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -13,18 +17,14 @@
 
 ## 1. Preámbulo
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
+El [algoritmo de Luhn](https://imgur.com/lLXTlNh),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
 se utiliza para validar números de identificación; tales como el IMEI de los
 celulares, tarjetas de crédito, etc.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+
+
 
 ## 2. Resumen del proyecto
 
