@@ -13,7 +13,7 @@ Este proyecto está orientado a usuarios de librerias virtuales. Por practicidad
 
 ## 1. Boceto en papel 
 
-En esta imagen se muestra la idea inicial de como estructurar wl peoyecto.
+En esta imagen se muestra la idea inicial de como estructurar el peoyecto.
 ![](boceto1.png)
 
 ## 2. Figma
@@ -40,7 +40,7 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 
 ###  Respecto a los tests
 * Considero que es muy importante aprender a testear y que luego seremos nosotras quienes escribamos el test. Fue una sorpresa para mi ver que tuve errores en el test pues yo pensaba que mi proyecto estaba listo. Sin embargo tuve que revisar de nuevo e incluso recibi feedback de una compañera respecto al error de "maskify"
-## 4. Vista Final
+## 5. Vista Final
 
 * Finalmente, el proyecto de ve de esta manera. 
 ![](web1.png)
