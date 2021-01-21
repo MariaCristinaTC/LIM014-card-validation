@@ -14,10 +14,12 @@ Este proyecto está orientado a usuarios de librerias virtuales. Por practicidad
 ## 1. Boceto en papel 
 
 En esta imagen se muestra la idea inicial de como estructurar wl peoyecto.
+![](boceto1.png)
 
 ## 2. Figma
 
 Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82PR6muP078gxd/Untitled?node-id=0%3A1), realizado durante los primeros dias del proyecto. Gracias a este prototipo pude recibir feedback por parte de mis compañeras de squad y usuarios en general.
+![](figma.png)
 
 ## 3. Feedback
 * Mejorar la redaccion de texto en la indicación. Pues no quedaba claro que era el paso final de un registro de perfil de usuario.
@@ -41,3 +43,5 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 ## 4. Vista Final
 
 * Finalmente el proyecto de ve de esta manera. 
+![](web1.png)
+![](web2.png)
