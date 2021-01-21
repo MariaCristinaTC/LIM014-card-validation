@@ -42,6 +42,6 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 * Considero que es muy importante aprender a testear y que luego seremos nosotras quienes escribamos el test. Fue una sorpresa para mi ver que tuve errores en el test pues yo pensaba que mi proyecto estaba listo. Sin embargo tuve que revisar de nuevo e incluso recibi feedback de una compañera respecto al error de "maskify"
 ## 4. Vista Final
 
-* Finalmente el proyecto de ve de esta manera. 
+* Finalmente, el proyecto de ve de esta manera. 
 ![](web1.png)
 ![](web2.png)
