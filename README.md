@@ -43,5 +43,5 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 ## 5. Vista Final
 
 * Finalmente, el proyecto de ve de esta manera. 
-![](web1.png)
-![](web2.png)
+![](tarjetavalida_screen 1)
+![](tarjetavalida_screenshot)
