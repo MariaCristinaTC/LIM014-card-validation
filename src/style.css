@@ -86,3 +86,8 @@ button {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
 }
+
+.home-img {
+    display: flex;
+    align-items: flex-end;
+}

@@ -4,7 +4,7 @@ const isValid = (numbCard) => {
         .reverse();
     console.log('before loop', numberArray)
         //first loop
-    var i;
+    let i;
     for (i = 0; i < numberArray.length; i++) {
         //test if second digit 
         if (i % 2 != 0) {
