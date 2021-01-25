@@ -1,5 +1,5 @@
 body {
-    font-family: "Extra-light 200";
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     background-position: initial;
     background-image: linear-gradient(to bottom, #9acda5, #8ed5c7, #96dae2, #afdcf3, #cdddf9);
@@ -73,11 +73,16 @@ button {
     border-width: 0px;
     background-color: rgb(5, 143, 143);
     color: #ffff;
-    font-family: "Extra-light 200";
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     display: inline-block;
     padding: 15px 25px;
     letter-spacing: 2px;
     font-weight: 200;
     margin: 15px;
+}
+
+.content-panel__form-area__input-group__input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }

@@ -10,6 +10,6 @@ document.getElementById('validateButton').addEventListener('click', () => {
     if (validator.isValid(creditCardNumber) == true) {
         document.getElementById("answer").innerHTML = validator.maskify(creditCardNumber) + " Tarjeta valida ✔✔✔ "
     } else {
-        document.getElementById("answer").innerHTML = validator.maskify(creditCardNumber) + " Tarjeta NO valida🤣🤣🤷‍♂️🤷‍♂️🤢"
+        document.getElementById("answer").innerHTML = validator.maskify(creditCardNumber) + " Tarjeta NO valida🤷‍♂️🤷‍♂️"
     }
 });
