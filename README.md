@@ -26,7 +26,7 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 * Colocar botones sin funcionalidad
 * No usar fonts muy diagonales.
 
-## 4. Manos a la obra
+## 4. Manos a la obra:
 
 ###  Respecto a la estructura HTML
    * Use solamente un screen. Desde el inicio trate de simplificar el proyecto y centrar mi atención en la funcionalidad por ende solo existe un espacio de input  en lugar de un "form" largo.
