@@ -1,15 +1,14 @@
-const isValid = (numbCard) => {
+const isValid = (numbCard) => { //parameter
     //convert into array
-    let numberArray = numbCard.split('')
-        .reverse();
+    let numberArray = numbCard.split('').reverse();
     console.log('before loop', numberArray)
         //first loop
-    let i;
-    for (i = 0; i < numberArray.length; i++) {
-        //test if second digit 
-        if (i % 2 != 0) {
+        //let i;
+    for (let i = 0; i < numberArray.length; i++) {
+        //test if  digit 
+        if ((i % 2) != 0) {
 
-            //multiply second digit
+            //multiply  digit
             let multipliedNumber = numberArray[i] * 2;
             numberArray[i] = multipliedNumber.toString();
 
@@ -17,59 +16,50 @@ const isValid = (numbCard) => {
                 let bigNumberArray = numberArray[i].split('');
 
                 let theProduct = parseInt(bigNumberArray[0]) + parseInt(bigNumberArray[1]);
-                numberArray[i] = theProduct.toString();
+                numberArray[i] = theProduct.toString(); //put it back into a string so that it can read it as am array and then sum it with the other numbers. All the other number are strings
             }
         }
-    }
+    } // there is no else bc there is no requirement for those numbers
     console.log('after loop', numberArray)
 
     //sum 
     let total = 0
-    let index = 0
-    for (index = 0; index < numberArray.length; index++) {
-        total = total + parseInt(numberArray[index]);
-
+    for (let index = 0; index < numberArray.length; index++) {
+        total = total + parseInt(numberArray[index]); //parseInt treat it  as a number so the + doesnt put toguether stuff as strings
     }
     console.log(total)
     if (total % 10 == 0) {
-
         return true
-
     } else {
         return false
     }
-
 }
 
 
 //
 const maskify = (numbCard) => {
-    // If length is greater than 4, then we have things to mask
+    // If length is greater than 4, then we use the mask
     if (numbCard.length > 4) {
         // reverse string
-        let reversed = reverse(numbCard);
+        let cardNumberArray = numbCard.split("");
         let newString = '';
-        for (let i = 0; i < reversed.length; i++) {
-            // if i < 4, we want to reveal these numbers in our output
-            if (i < 4) {
-                newString += reversed[i];
+
+        for (let i = 0; i < cardNumberArray.length; i++) {
+            // if i is less than the array's lenght -4 then hide
+            if (i < (cardNumberArray.length - 4)) {
+                newString += '#'; //+= means concatenation in this case
+
             } else {
-                // otherwise, just hide it
-                newString += '#';
+
+                newString += cardNumberArray[i]; //show if the index is bigger than array's lenght -4
             }
         }
-        // return the reversal of the string to revert it back to original format
-        return reverse(newString);
+
+        return newString;
     } else {
-        return numbCard;
+        return numbCard; // if the input is 4 or less then only show the whole numbCard
     }
 }
-
-function reverse(str) {
-    return str.split("").reverse().join("");
-}
-
-
 
 const validator = { isValid, maskify }
 export default validator

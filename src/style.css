@@ -15,7 +15,7 @@ body {
     max-width: 800px;
     border-radius: 50px;
     margin: 20px;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 10px;
     align-self: center;
 }
@@ -42,6 +42,7 @@ body {
 .content-panel__suggestion {
     text-align: center;
     margin: 20px;
+    font-size: larger;
 }
 
 .content-panel__form-area {
@@ -58,7 +59,7 @@ body {
 
 .content-panel__form-area__input-group__input {
     padding: 10px 20px;
-    font-family: "Extra-light 200";
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
 }
 
@@ -74,11 +75,11 @@ button {
     background-color: rgb(5, 143, 143);
     color: #ffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     display: inline-block;
     padding: 15px 25px;
     letter-spacing: 2px;
-    font-weight: 200;
+    font-weight: 300;
     margin: 15px;
 }
 
@@ -87,7 +88,14 @@ button {
     font-size: 14px;
 }
 
-.home-img {
+.icons {
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.iconMain {
+    height: 80px;
+    width: 80px;
 }
