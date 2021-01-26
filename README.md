@@ -24,7 +24,7 @@ Aqui se encuentra el [Prototipo en Figma](https://www.figma.com/file/FtlwH5Mi82P
 ## 3. Feedback
 * Mejorar la redaccion de texto en la indicación. Pues no quedaba claro que era el paso final de un registro de perfil de usuario.
 * Colocar botones sin funcionalidad
-* No usar fonts muy diagonales.
+* No usar fonts muy diagonales
 
 ## 4. Manos a la obra:
 
